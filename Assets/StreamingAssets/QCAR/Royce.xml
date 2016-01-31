@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Royce6" size="10.000000 5.755208" />
+    <ImageTarget name="Royce5" size="10.000000 8.931186" />
+    <ImageTarget name="Royce4" size="10.000000 4.897361" />
+    <ImageTarget name="Royce_tracker3" size="10.000000 5.119887" />
+    <ImageTarget name="Royce_tracker2" size="10.000000 3.064799" />
+    <ImageTarget name="Royce_tracker1" size="10.000000 10.000000" />
+  </Tracking>
+</QCARConfig>
