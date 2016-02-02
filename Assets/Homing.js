@@ -1,5 +1,6 @@
 ﻿#pragma strict
- 
+
+//import UnityEngine.UI;
 var missileVelocity : float = 1;
 var turn : float = 20;
 var homingMissile : Rigidbody;
@@ -9,6 +10,8 @@ var SmokePrefab : ParticleSystem;
 var missileClip : AudioClip;
 var targetPosition : Vector3;
 var explosion : GameObject;
+
+var healthSlider : GameObject; 
 
 private var target : Transform;
  
@@ -57,20 +60,18 @@ function Fire ()
  
 function OnCollisionEnter (theCollision : Collision)
 {
- 
-    //if(theCollision.gameObject.name == "Cube (1)")
-    {
+
+    //Debug.Log(healthSlider.value);	
         //SmokePrefab.emissionRate = 0.0f;
-        Destroy(missileMod.gameObject);
+    Destroy(missileMod.gameObject);
 
 
-        Destroy(gameObject);
+    Destroy(gameObject);
 
-        var newexplosion : GameObject = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
+    var newexplosion : GameObject = Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
 
-        //yield WaitForSeconds(3);
-        Destroy(newexplosion, 3);
+    //yield WaitForSeconds(3);
+    Destroy(newexplosion, 3);
 
-    }
  
 }
